@@ -1,0 +1,64 @@
+{% extends "portfolio_app/base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="projects-background">
+  <div class="projects-container">
+    <div class="projects-item">
+
+      <div class="projects-item-container">
+        <h2 class="div-title" id="valorant-randomizer">Valorant Randomizer</h2>
+        <img class="projects-pic" src="{% static 'portfolio_app/img/valorant.png' %}">
+        <p class="projects-description">
+          This Valorant Randomizer web application, built with Django and JavaScript, 
+          enhances gameplay by randomly selecting agents and maps for players. 
+          It fetches data from Riot Game's Valorant API, 
+          allowing users to choose game modes and agent roles.
+        </p>
+        <br>
+        <p><a href="https://valorant-randomizer.onrender.com/" target="_blank">View</a> | <a href="https://github.com/slong96/valorant-randomizer" target="_blank">GitHub</a></p>
+        <br>
+      </div>
+
+      <hr>
+
+      <div class="projects-item-container">
+        <h2 class="div-title" id="file-organizer">File Organizer</h2>
+        <img class="projects-pic" src="{% static 'portfolio_app/img/file-organizer.png' %}">
+        <p class="projects-description">
+          This Python code organizes files within a specified directory based on their file extensions. 
+          It checks for the existence of the specified directory, prompts the user to input a valid path, 
+          and then categorizes files into folders corresponding to their extension names.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RctT6BeTH_M?si=aJC47bzriO2JONJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <a href="https://github.com/slong96/file_organizer" target="_blank">GitHub</a>
+        <br>
+      </div>
+
+      <hr>
+
+      <div class="projects-item-container">
+        <h2 class="div-title" id="movie-trivia-quiz">Movie Trivia Quiz</h2>
+        <img class="projects-pic" src="{% static 'portfolio_app/img/movietriviaquiz.png' %}">
+        <p class="projects-description">
+          This project was created using HTML, CSS, and JavaScript. 
+          It uses Open Trivia Database to generate an API url. 
+          The website will fetch the data (questions and answers), 
+          then display them. There's also a score counter to keep 
+          track of how many right answers the user has. The 'next' 
+          button will be enabled when an answer is selected. 
+          After answering ten questions, a final score and a 
+          'play again' button will be displayed at the end.
+        </p>
+        <br>
+        <p><a href="https://slong96.github.io/trivia_quiz/" target="_blank">View</a> | <a href="https://github.com/slong96/trivia_quiz" target="_blank">GitHub</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock content %}

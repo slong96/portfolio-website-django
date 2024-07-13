@@ -1,0 +1,27 @@
+{% extends "portfolio_app/base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="resume-container">
+  <div>
+    <object
+      data="{% static 'portfolio_app/resume.pdf' %}"
+      type="application/pdf"
+      width="900"
+      height="800"
+    >
+
+      <iframe
+        src="{% static 'portfolio_app/resume.pdf' %}"
+        width="900"
+        height="800"
+      >
+      <p>This browser does not support PDF!</p>
+      </iframe>
+    </object>
+  </div>
+</div>
+
+
+
+{% endblock content %}

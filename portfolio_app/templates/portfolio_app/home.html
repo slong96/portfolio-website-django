@@ -1,0 +1,129 @@
+{% extends "portfolio_app/base.html" %}
+{% block content %}
+{% load static %}
+
+
+<div class="hero-background" id="hero">
+  <div class="hero-container">
+    <div class="hero-items">
+      <h1 class="div-title">Hi</h1>
+      <p>My name is Sophanda Long.</p>
+      <p>I'm a software developer based in Minnesota.</p>
+      <a href="{% url 'resume-page' %}"><button class="btn btn-danger">View Resume</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="edu-background">
+  <div class="edu-container">
+    <div class="edu-item">
+      <h2 class="div-title">Education</h2>
+      <b>Bachelor of Science (B.S) Software Engineering</b>
+      <p>Western Governors University, 2025</p>
+      <b>Associate of Applied Science (A.A.S) Software Development</b>
+      <p>Minneapolis College, 2023</p>
+      <hr>
+      <h2>Certificates</h2>
+      <p><b>Information Technology Fundamentals Certificate</b> - Minneapolis College, 2023</p>
+      <p><b>Web Developer Certificate</b> - Minneapolis College, 2023</p>
+      <p><b>Java Developer Certificate</b> - Minneapolis College, 2022</p>
+      <hr>
+      <div>
+        <h2 class="div-title">Skills</h2>
+        <div class="skills-list">
+          <div>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>Vue</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>SQL</li>
+              <li>Git</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<div class="project-background">
+  <div class="project-container">
+    <div class="project-item">
+      <h2 class="div-title">Projects</h2>
+      <hr>
+
+      <div class="project-box">
+        <div>
+          <b>Valorant Randomizer</b>
+          <img class="project-pic" src="{% static 'portfolio_app/img/valorant.png' %}">
+        </div>
+        <div>
+          <p>
+            This Valorant Randomizer web application, built with Django and JavaScript, 
+            enhances gameplay by randomly selecting agents and maps for players. 
+            It fetches data from Riot Game's Valorant API, 
+            allowing users to choose game modes and agent roles.
+          </p>
+          <div>
+            <p><a href="https://valorant-randomizer.onrender.com/" target="_blank">View</a> | <a href="https://github.com/slong96/valorant-randomizer" target="_blank">GitHub</a> | <a href="{% url 'projects-page' %}#valorant-randomizer">More info</a></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="project-box">
+        <div>
+          <b>File Organizer</b>
+          <img class="project-pic" src="{% static 'portfolio_app/img/file-organizer.png' %}">
+        </div>
+        <div>
+          <p>This Python code organizes files within a specified directory based on their file extensions. 
+            It checks for the existence of the specified directory, 
+            prompts the user to input a valid path, 
+            and then categorizes files into folders corresponding to their extension names.</p>
+          <div>
+            <p><a href="https://github.com/slong96/file_organizer" target="_blank">GitHub</a> | <a href="{% url 'projects-page' %}#file-organizer">More info</a></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="project-box">
+        <div>
+          <b>Movie Trivia Quiz</b>
+          <img class="project-pic" src="{% static 'portfolio_app/img/movietriviaquiz.png' %}">
+        </div>
+        <div>
+          <p>A trivia website made by HTML, CSS, and JavaScript. 
+            Uses Open Trivia Database to generate an API url. 
+            Fetch questions and answer data from the database. 
+            Use JavaScript to display the them.</p>
+          <div>
+            <p><a href="https://slong96.github.io/trivia_quiz/" target="_blank">View</a> | <a href="https://github.com/slong96/trivia_quiz" target="_blank">GitHub</a> | <a href="{% url 'projects-page' %}#movie-trivia-quiz">More info</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+{% endblock content %}
