@@ -6,17 +6,35 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-nav {
+  margin:0 auto;
+  text-align: center;
+}
+
 .nav-link.active {
-  color: rgb(255, 0, 0);
+  background-color: #fff2f2;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+object {
+  width: 900px;
+  height: 1150px;
+}
+
 a {
   text-decoration: none;
   color: red;
+}
+
+a:hover {
+  background-color: #fff2f2;
 }
 
 h1 {
@@ -57,7 +75,7 @@ footer {
 div {
   animation: fade linear both;
   animation-timeline: view();
-  animation-range: entry 5% cover 20%;
+  animation-range: entry 10% cover 12%;
 }
 
 /* HOME.HTML */
@@ -196,7 +214,9 @@ div {
   margin: 10px;
 }
 
-/* TABLETS LARGE */
+
+
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 60px;
@@ -223,9 +243,13 @@ div {
   .projects-description {
     width: 400px;
   }
+
+  object {
+    width: 800px;
+    height: 1000px;
+  }
 }
 
-/* TABLETS MEDIUM */
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
@@ -235,42 +259,18 @@ div {
     font-size: 28px;
   }
 
-  .skills-item {
-    width: 500px;
+  .hero-items {
+    margin: auto;
   }
 
-  .project-item {
+  object {
     width: 600px;
-    margin: 40px;
-    padding: 40px;
+    height: 900px;
   }
 
-  .projects-pic {
-    width: 400px;
-  }
-
-  .projects-description {
-    width: 300px;
-  }
-
-  .edu-container,
-  .skills-container,
-  .project-container,
-  .projects-container {
-    flex-direction: column;
-  }
-
-  .hero-container,
-  .edu-container,
-  .skills-container,
-  .project-container,
-  .projects-container {
-    align-items: flex-start;
-  }
 }
 
-/* PHONE */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   h1 {
     font-size: 40px;
   }
@@ -279,51 +279,172 @@ div {
     font-size: 24px;
   }
 
-  .skills-item {
-    width: 100%;
-    padding: 20px;
+  .edu-item {
+    width: 600px;
   }
 
   .project-item {
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
+    background-color: white;
+    width: 600px;
+    border-radius: 20px;
+  }
+  .project-box {
+    display: contents;
+  }
+  .project-title-img {
+    text-align: center;
+    padding: 3px;
+  }
+  .project-links {
+    text-align: center;
+  }
+  .project-pic {
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
   }
 
-  .projects-pic {
-    width: 100%;
+  object {
+    width: 500px;
+    height: 700px;
   }
 
-  .projects-description {
-    width: 100%;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 30px;
   }
 
-  .hero-container,
-  .edu-container,
-  .skills-container,
-  .project-container,
-  .projects-container {
-    flex-direction: column;
+  h2 {
+    font-size: 16px;
   }
 
-  .hero-items,
-  .edu-item,
-  .skills-item,
-  .project-item,
+  b,p,li {
+    font-size: 12px;
+  }
+
+  .edu-item {
+    max-width: 400px;
+  }
+
+  .project-item {
+    background-color: white;
+    width: 600px;
+    border-radius: 20px;
+  }
+  .project-box {
+    display: contents;
+  }
+  .project-title-img {
+    text-align: center;
+  }
+  .project-links {
+    text-align: center;
+  }
+  .project-pic {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  object {
+    width: 300px;
+    height: 500px;
+  }
+
+
   .projects-item {
-    width: 100%;
-    padding: 20px;
+    width: 500px;
+  }
+  .projects-pic {
+    width: 300px;
+  }
+  .iframe-video {
+    width: 400px;
   }
 
-  .hero-background,
-  .edu-background,
-  .skills-background,
-  .project-background,
-  .projects-background {
-    height: auto;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 26px;
   }
 
-  .hero-background {
-    background-size: cover;
+  h2 {
+    font-size: 14px;
   }
+
+  b,p,li {
+    font-size: 11px;
+  }
+
+  .projects-item {
+    width: 400px;
+  }
+  .projects-pic {
+    width: 200px;
+  }
+  .iframe-video {
+    width: 300px;
+  }
+  .projects-description {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  b,p,li {
+    font-size: 10px;
+  }
+
+  .edu-item {
+    max-width: 280px;
+  }
+
+  .project-item {
+    background-color: white;
+    width: 280px;
+    border-radius: 20px;
+  }
+  .project-box {
+    display: contents;
+  }
+  .project-title-img {
+    text-align: center;
+  }
+  .project-links {
+    text-align: center;
+  }
+  .project-pic {
+    width: 180px;
+  }
+
+  object {
+    width: 200px;
+    height: 250px;
+  }
+
+  .projects-item {
+    width: 300px;
+  }
+  .projects-pic {
+    width: 180px;
+  }
+  .iframe-video {
+    width: 250px;
+  }
+  .projects-description {
+    width: 200px;
+  }
+
 }
